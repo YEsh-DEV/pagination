@@ -1,0 +1,115 @@
+:root {
+  /* Color Palette - Cream & Light Brown Premium Theme */
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F3ECE2;
+  --bg-tertiary: #EBE2D5;
+  
+  --card-bg: #FFFFFF;
+  --card-bg-glass: rgba(255, 255, 255, 0.88);
+  
+  --text-primary: #2C2520;
+  --text-secondary: #6E5C4F;
+  --text-muted: #9E8C7E;
+  
+  --accent-brown: #8C6D53;
+  --accent-brown-dark: #664E3A;
+  --accent-brown-light: #F4ECCF;
+  --accent-gold: #C5A059;
+  
+  --border-color: #E6DDCF;
+  --border-color-hover: #D5C6B1;
+
+  --badge-bg: #F3ECE2;
+  --badge-text: #664E3A;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(74, 55, 40, 0.04);
+  --shadow-md: 0 8px 24px rgba(74, 55, 40, 0.07);
+  --shadow-lg: 0 16px 40px rgba(74, 55, 40, 0.1);
+  --shadow-card: 0 12px 30px rgba(60, 42, 28, 0.06);
+
+  /* Border Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="warm"] {
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F3ECE2;
+  --bg-tertiary: #EBE2D5;
+  --card-bg: #FFFFFF;
+  --card-bg-glass: rgba(255, 255, 255, 0.88);
+  --text-primary: #2C2520;
+  --text-secondary: #6E5C4F;
+  --text-muted: #9E8C7E;
+  --accent-brown: #8C6D53;
+  --accent-brown-dark: #664E3A;
+  --accent-brown-light: #F4ECCF;
+  --accent-gold: #C5A059;
+  --border-color: #E6DDCF;
+  --border-color-hover: #D5C6B1;
+  --badge-bg: #F3ECE2;
+  --badge-text: #664E3A;
+  --shadow-sm: 0 2px 8px rgba(74, 55, 40, 0.04);
+  --shadow-md: 0 8px 24px rgba(74, 55, 40, 0.07);
+  --shadow-lg: 0 16px 40px rgba(74, 55, 40, 0.1);
+  --shadow-card: 0 12px 30px rgba(60, 42, 28, 0.06);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #121212;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #242424;
+  --card-bg: #1e1e1e;
+  --card-bg-glass: rgba(30, 30, 30, 0.88);
+  --text-primary: #e5e5e5;
+  --text-secondary: #b3b3b3;
+  --text-muted: #808080;
+  --accent-brown: #a88467;
+  --accent-brown-dark: #c5a083;
+  --accent-brown-light: #2c2518;
+  --accent-gold: #e5c07b;
+  --border-color: #2c2c2c;
+  --border-color-hover: #3d3d3d;
+  --badge-bg: #242424;
+  --badge-text: #e5c07b;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="cyberpunk"] {
+  --bg-primary: #05050f;
+  --bg-secondary: #0b0b1a;
+  --bg-tertiary: #12122b;
+  --card-bg: #0f0f23;
+  --card-bg-glass: rgba(15, 15, 35, 0.88);
+  --text-primary: #00FFCC;
+  --text-secondary: #FF007F;
+  --text-muted: #8B8BFF;
+  --accent-brown: #00FFCC;
+  --accent-brown-dark: #00CCAA;
+  --accent-brown-light: rgba(0, 255, 204, 0.15);
+  --accent-gold: #FF007F;
+  --border-color: #1e1e44;
+  --border-color-hover: #FF007F;
+  --badge-bg: #12122b;
+  --badge-text: #FF007F;
+  --shadow-sm: 0 2px 8px rgba(0, 255, 204, 0.15);
+  --shadow-md: 0 8px 24px rgba(0, 255, 204, 0.25);
+  --shadow-lg: 0 16px 40px rgba(255, 0, 127, 0.3);
+  --shadow-card: 0 12px 30px rgba(255, 0, 127, 0.25);
+}
+

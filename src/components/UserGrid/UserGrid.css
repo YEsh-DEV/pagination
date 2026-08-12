@@ -1,0 +1,23 @@
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* Tablet Layout: 2 cards per row */
+@media (max-width: 1024px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* Mobile Layout: 1 card per row */
+@media (max-width: 640px) {
+  .user-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

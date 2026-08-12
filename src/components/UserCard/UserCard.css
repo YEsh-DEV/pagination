@@ -1,0 +1,184 @@
+.user-card {
+  position: relative;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform var(--transition-bounce), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  cursor: pointer;
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-color-hover);
+}
+
+.user-card:focus-visible {
+  outline: 2px solid var(--accent-brown);
+  outline-offset: 2px;
+}
+
+.card-header-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.gender-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  background-color: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--border-color);
+}
+
+.gender-badge.female {
+  background-color: #FDF2F2;
+  color: #C53030;
+  border-color: #FEB2B2;
+}
+
+.gender-badge.male {
+  background-color: #EBF8FF;
+  color: #2B6CB0;
+  border-color: #90CDF4;
+}
+
+.nat-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-brown-light);
+  color: var(--accent-brown-dark);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.avatar-wrapper {
+  position: relative;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.user-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 3px solid var(--card-bg);
+  box-shadow: 0 4px 14px rgba(74, 55, 40, 0.12);
+  background-color: var(--bg-secondary);
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+  background-color: #38A169;
+  border: 2px solid var(--card-bg);
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.user-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+}
+
+.email-row .info-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+}
+
+.info-icon {
+  color: var(--accent-brown);
+  flex-shrink: 0;
+}
+
+.card-extra-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border-color);
+  width: 100%;
+}
+
+.extra-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.extra-icon {
+  color: var(--accent-brown);
+}
+
+.card-footer-action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-primary);
+  color: var(--accent-brown-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.user-card:hover .card-footer-action {
+  background-color: var(--accent-brown);
+  color: var(--card-bg);
+}
+
+.user-card:hover .arrow-icon {
+  transform: translateX(3px);
+  transition: transform var(--transition-fast);
+}
