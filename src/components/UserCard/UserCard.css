@@ -1,23 +1,42 @@
 .user-card {
   position: relative;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background: linear-gradient(135deg, var(--card-bg-glass), rgba(255, 255, 255, 0.03));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-lg);
-  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
-  box-shadow: var(--shadow-sm);
+  padding: 1.6rem 1.25rem 1.25rem 1.25rem;
+  box-shadow: var(--shadow-card), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform var(--transition-bounce), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow var(--transition-fast), border-color var(--transition-fast);
   cursor: pointer;
   animation: fadeIn 0.35s ease-out forwards;
+  overflow: hidden;
+}
+
+.user-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-brown));
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.user-card:hover::before {
+  opacity: 1;
 }
 
 .user-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--border-color-hover);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(197, 160, 89, 0.3);
 }
 
 .user-card:focus-visible {
@@ -83,6 +102,11 @@
   border: 3px solid var(--card-bg);
   box-shadow: 0 4px 14px rgba(74, 55, 40, 0.12);
   background-color: var(--bg-secondary);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.user-card:hover .user-avatar {
+  transform: scale(1.08);
 }
 
 .online-indicator {
