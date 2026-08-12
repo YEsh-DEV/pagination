@@ -85,3 +85,16 @@ select:focus-visible {
     transform: scale(1) translateY(0);
   }
 }
+
+[data-font="serif"] {
+  --font-body: 'Playfair Display', Georgia, serif;
+}
+
+[data-font="mono"] {
+  --font-body: 'Courier New', Courier, monospace;
+}
+
+[data-font="sans"] {
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+

@@ -133,6 +133,34 @@
   box-shadow: var(--shadow-md);
 }
 
+.font-select-wrapper {
+  position: relative;
+}
+
+.font-select {
+  appearance: none;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 0.6rem 1.5rem 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.font-select:hover {
+  border-color: var(--accent-gold);
+  background-color: var(--accent-brown-light);
+  color: var(--accent-brown-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+
 @media (max-width: 640px) {
   .header-container {
     flex-direction: column;

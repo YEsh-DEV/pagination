@@ -28,10 +28,19 @@ function App() {
     return localStorage.getItem("theme") || "warm";
   });
 
+  const [fontStyle, setFontStyle] = useState(() => {
+    return localStorage.getItem("fontStyle") || "sans";
+  });
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-font", fontStyle);
+    localStorage.setItem("fontStyle", fontStyle);
+  }, [fontStyle]);
 
   // Compute filtered users array based on search query
   const filteredUsers = filterUsers(users, searchQuery);
@@ -73,6 +82,8 @@ function App() {
         totalPages={totalPages}
         theme={theme}
         setTheme={setTheme}
+        fontStyle={fontStyle}
+        setFontStyle={setFontStyle}
       />
 
       <main className="app-main-container">
